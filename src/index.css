@@ -33,3 +33,52 @@ body {
 .hero-text {
   margin: 0;
 }
+
+.card-box {
+  width: 180px;
+  margin-left: 37px;
+  margin-top: 30px;
+}
+
+.card-image {
+  width: 176px;
+  height: 235px;
+}
+
+.card-rating {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  column-gap: 2px;
+}
+
+.star-logo {
+  width: 14px;
+  height: 14px;
+}
+
+.card-rating > p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.card-info {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.card-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+}
