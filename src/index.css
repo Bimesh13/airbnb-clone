@@ -82,3 +82,13 @@ body {
   font-size: 12px;
   line-height: 110%;
 }
+
+.joke-section {
+  padding: 30px;
+}
+
+.joke-section > h1 {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 110%;
+}
