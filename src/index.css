@@ -7,96 +7,95 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.nav-bar {
+nav {
   height: 70px;
-  padding: 22px 30px;
+  display: flex;
+  padding: 20px 36px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.logo-image {
-  height: 26px;
-  width: 83px;
+.bold {
+  font-weight: bold;
 }
 
-.hero-section {
+.gray {
+  color: #918e9b;
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  padding: 30px;
 }
 
-.photo-grid {
-  max-width: 600px;
+.hero--photo {
+  max-width: 400px;
   align-self: center;
 }
 
-.hero-text {
-  margin: 0;
+.hero--header {
+  margin-bottom: 16px;
 }
 
-.card-box {
-  width: 180px;
-  margin-left: 37px;
-  margin-top: 30px;
+.hero--text {
+  margin-top: 0;
 }
 
-.card-image {
-  width: 176px;
-  height: 235px;
-}
-
-.card-rating {
-  display: flex;
-  align-content: center;
-  justify-content: flex-start;
-  column-gap: 2px;
-}
-
-.star-logo {
-  width: 14px;
-  height: 14px;
-}
-
-.card-rating > p {
-  margin: 0;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 110%;
-}
-
-.grey-text {
-  color: grey;
-}
-
-.card-info {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 110%;
-}
-
-.card-price {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 110%;
-}
-
-.joke-section {
-  padding: 30px;
-}
-
-.joke-section > h1 {
-  font-style: normal;
-  font-size: 18px;
-  line-height: 110%;
-}
-
-.card-flex {
+.cards-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
-  margin-right: 20px;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto; /* ADD */
+  display: flex; /* ADD */
+  flex-direction: column; /* ADD */
+  position: relative;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
